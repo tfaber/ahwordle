@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "AH Biologische Melk 1L",
+    "description": "Verse biologische volle melk van Nederlandse koeien",
+    "price": 1.79,
+    "image": "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=300&h=300&fit=crop&crop=center",
+    "category": "Zuivel"
+  },
+  {
+    "id": 2,
+    "name": "AH Brood Bruin Meergranen",
+    "description": "Vers bruin brood met verschillende granen en zaden",
+    "price": 2.19,
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=300&h=300&fit=crop&crop=center",
+    "category": "Bakkerij"
+  },
+  {
+    "id": 3,
+    "name": "AH Bananen per kg",
+    "description": "Verse gele bananen, perfect rijp",
+    "price": 1.99,
+    "image": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=300&h=300&fit=crop&crop=center",
+    "category": "Fruit"
+  },
+  {
+    "id": 4,
+    "name": "AH Eieren Scharrelei 10 stuks",
+    "description": "Verse scharreleieren van Nederlandse kippen",
+    "price": 2.49,
+    "image": "https://images.unsplash.com/photo-1518569656558-1f25e69d93d3?w=300&h=300&fit=crop&crop=center",
+    "category": "Zuivel"
+  },
+  {
+    "id": 5,
+    "name": "AH Kipfilet 500g",
+    "description": "Verse kipfilet zonder vel, perfect voor grillen",
+    "price": 4.99,
+    "image": "https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=300&h=300&fit=crop&crop=center",
+    "category": "Vlees"
+  },
+  {
+    "id": 6,
+    "name": "AH Tomaten Cherry 250g",
+    "description": "Zoete cherrytomaten, perfect voor salades",
+    "price": 2.79,
+    "image": "https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=300&h=300&fit=crop&crop=center",
+    "category": "Groenten"
+  },
+  {
+    "id": 7,
+    "name": "AH Pasta Spaghetti 500g",
+    "description": "Klassieke spaghetti van durumtarwe",
+    "price": 1.29,
+    "image": "https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?w=300&h=300&fit=crop&crop=center",
+    "category": "Pasta & Rijst"
+  },
+  {
+    "id": 8,
+    "name": "AH Kaas Goudse Jong 200g",
+    "description": "Hollandse Goudse kaas, jong en mild van smaak",
+    "price": 3.49,
+    "image": "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=300&h=300&fit=crop&crop=center",
+    "category": "Zuivel"
+  },
+  {
+    "id": 9,
+    "name": "AH Appels Elstar per kg",
+    "description": "Knapperige Elstar appels, zoet en fris",
+    "price": 2.99,
+    "image": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=300&h=300&fit=crop&crop=center",
+    "category": "Fruit"
+  },
+  {
+    "id": 10,
+    "name": "AH Yoghurt Griekse Stijl 500g",
+    "description": "Romige yoghurt Griekse stijl, perfect voor ontbijt",
+    "price": 2.19,
+    "image": "https://images.unsplash.com/photo-1571212515410-1b2d4b0b0b0b?w=300&h=300&fit=crop&crop=center",
+    "category": "Zuivel"
+  },
+  {
+    "id": 11,
+    "name": "AH Zalmfilet 300g",
+    "description": "Verse zalmfilet, perfect voor de grill",
+    "price": 8.99,
+    "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=300&h=300&fit=crop&crop=center",
+    "category": "Vis"
+  },
+  {
+    "id": 12,
+    "name": "AH Avocado Hass 2 stuks",
+    "description": "Rijpe Hass avocado's, perfect voor toast of salade",
+    "price": 3.99,
+    "image": "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=300&h=300&fit=crop&crop=center",
+    "category": "Fruit"
+  },
+  {
+    "id": 13,
+    "name": "AH Rijst Basmati 1kg",
+    "description": "Aromatische basmati rijst, perfect bij curry's",
+    "price": 2.89,
+    "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=300&h=300&fit=crop&crop=center",
+    "category": "Pasta & Rijst"
+  },
+  {
+    "id": 14,
+    "name": "AH Spinazie Vers 200g",
+    "description": "Verse spinazie, perfect voor salades en smoothies",
+    "price": 1.99,
+    "image": "https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=300&h=300&fit=crop&crop=center",
+    "category": "Groenten"
+  },
+  {
+    "id": 15,
+    "name": "AH Olijfolie Extra Vierge 500ml",
+    "description": "Koudgeperste extra vierge olijfolie uit Italië",
+    "price": 4.99,
+    "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=300&h=300&fit=crop&crop=center",
+    "category": "Olie & Azijn"
+  },
+  {
+    "id": 16,
+    "name": "AH Koffiebonen Rood 500g",
+    "description": "Premium koffiebonen, medium roast",
+    "price": 6.99,
+    "image": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=300&h=300&fit=crop&crop=center",
+    "category": "Koffie & Thee"
+  },
+  {
+    "id": 17,
+    "name": "AH Chocolade Melk 200g",
+    "description": "Pure melkchocolade, 35% cacao",
+    "price": 1.89,
+    "image": "https://images.unsplash.com/photo-1511381939415-e44015466834?w=300&h=300&fit=crop&crop=center",
+    "category": "Snoep & Chocolade"
+  },
+  {
+    "id": 18,
+    "name": "AH Noten Mix 200g",
+    "description": "Gezonde mix van amandelen, walnoten en cashewnoten",
+    "price": 4.49,
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=300&h=300&fit=crop&crop=center",
+    "category": "Noten & Zaden"
+  },
+  {
+    "id": 19,
+    "name": "AH Honing Acacia 340g",
+    "description": "Pure acaciahoning, vloeibaar en zoet",
+    "price": 3.99,
+    "image": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=300&h=300&fit=crop&crop=center",
+    "category": "Bakken & Koken"
+  },
+  {
+    "id": 20,
+    "name": "AH Thee Groene Thee 20 zakjes",
+    "description": "Aromatische groene thee met jasmijn",
+    "price": 2.29,
+    "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=300&h=300&fit=crop&crop=center",
+    "category": "Koffie & Thee"
+  }
+]

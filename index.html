@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albert Heijn Price Guesser</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <h1>Albert Heijn</h1>
+                <p class="slogan">Dat is het <span class="lekkere">lekkere</span> van Albert Heijn</p>
+                <p class="subtitle">Price Guesser</p>
+            </div>
+        </header>
+
+        <main class="game-container">
+            <div class="product-display">
+                <div class="product-image-container">
+                    <img id="product-image" src="" alt="Product" class="product-image">
+                </div>
+                <div class="product-info">
+                    <h2 id="product-description" class="product-description"></h2>
+                    <p class="game-instruction">Guess the price! You have 5 attempts.</p>
+                </div>
+            </div>
+
+            <div class="game-area">
+                <div class="guess-input-container">
+                    <input type="number" id="price-input" placeholder="Enter price (€)" min="0" step="0.01" class="price-input">
+                    <button id="submit-guess" class="submit-button">Guess</button>
+                </div>
+
+                <div class="guesses-container">
+                    <div class="guess-row" data-attempt="0">
+                        <div class="guess-cell">
+                            <span class="guess-price">€0.00</span>
+                        </div>
+                        <div class="guess-feedback">
+                            <span class="feedback-text">Start guessing!</span>
+                        </div>
+                    </div>
+                    <div class="guess-row" data-attempt="1">
+                        <div class="guess-cell">
+                            <span class="guess-price">€0.00</span>
+                        </div>
+                        <div class="guess-feedback">
+                            <span class="feedback-text"></span>
+                        </div>
+                    </div>
+                    <div class="guess-row" data-attempt="2">
+                        <div class="guess-cell">
+                            <span class="guess-price">€0.00</span>
+                        </div>
+                        <div class="guess-feedback">
+                            <span class="feedback-text"></span>
+                        </div>
+                    </div>
+                    <div class="guess-row" data-attempt="3">
+                        <div class="guess-cell">
+                            <span class="guess-price">€0.00</span>
+                        </div>
+                        <div class="guess-feedback">
+                            <span class="feedback-text"></span>
+                        </div>
+                    </div>
+                    <div class="guess-row" data-attempt="4">
+                        <div class="guess-cell">
+                            <span class="guess-price">€0.00</span>
+                        </div>
+                        <div class="guess-feedback">
+                            <span class="feedback-text"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-status">
+                    <div id="game-message" class="game-message"></div>
+                    <button id="new-game" class="new-game-button" style="display: none;">New Game</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

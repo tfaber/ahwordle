@@ -1,0 +1,431 @@
+/* Albert Heijn Brand Colors - Authentic Blue Theme */
+:root {
+    --ah-red: #E31837;
+    --ah-dark-red: #C4122F;
+    --ah-light-red: #F5E6E8;
+    --ah-blue: #0066CC;
+    --ah-dark-blue: #004499;
+    --ah-light-blue: #E6F2FF;
+    --ah-primary-blue: #0066CC;
+    --ah-secondary-blue: #004499;
+    --ah-accent-blue: #0088CC;
+    --ah-green: #00A651;
+    --ah-dark-green: #008A42;
+    --ah-light-green: #E6F7ED;
+    --ah-yellow: #FFD700;
+    --ah-orange: #FF8C00;
+    --ah-gray: #666666;
+    --ah-light-gray: #F8F9FA;
+    --ah-white: #FFFFFF;
+    --ah-black: #1A1A1A;
+    --ah-background-blue: #4A90E2;
+    --ah-bright-blue: #5BA0F2;
+    --ah-vibrant-blue: #4A90E2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--ah-vibrant-blue);
+    background-image: 
+        radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+    min-height: 100vh;
+    color: var(--ah-black);
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--ah-white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+    letter-spacing: -0.02em;
+}
+
+.slogan {
+    font-size: 1.4rem;
+    color: var(--ah-white);
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.lekkere {
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--ah-white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--ah-white);
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+/* Game Container */
+.game-container {
+    background: var(--ah-white);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    margin-bottom: 20px;
+    border: 2px solid var(--ah-white);
+    position: relative;
+    z-index: 1;
+}
+
+/* Product Display */
+.product-display {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: var(--ah-light-gray);
+    border-radius: 15px;
+    border: 2px solid var(--ah-primary-blue);
+    position: relative;
+}
+
+.product-display::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.05) 0%, rgba(91, 160, 242, 0.05) 100%);
+    border-radius: 15px;
+    pointer-events: none;
+}
+
+.product-image-container {
+    flex-shrink: 0;
+}
+
+.product-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 3px solid var(--ah-white);
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-description {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--ah-black);
+    margin-bottom: 10px;
+}
+
+.game-instruction {
+    font-size: 1rem;
+    color: var(--ah-gray);
+    font-weight: 500;
+}
+
+/* Game Area */
+.game-area {
+    text-align: center;
+}
+
+.guess-input-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.price-input {
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    border: 2px solid var(--ah-gray);
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.price-input:focus {
+    outline: none;
+    border-color: var(--ah-primary-blue);
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+.submit-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: var(--ah-primary-blue);
+    color: var(--ah-white);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.submit-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.submit-button:hover::before {
+    left: 100%;
+}
+
+.submit-button:hover {
+    background: var(--ah-secondary-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 102, 204, 0.3);
+}
+
+.submit-button:disabled {
+    background: var(--ah-gray);
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Guesses Container */
+.guesses-container {
+    margin-bottom: 30px;
+}
+
+.guess-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: var(--ah-light-gray);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.guess-row.active {
+    border-color: var(--ah-primary-blue);
+    background: var(--ah-light-blue);
+}
+
+.guess-row.correct {
+    border-color: var(--ah-green);
+    background: var(--ah-light-green);
+}
+
+.guess-row.incorrect {
+    border-color: var(--ah-orange);
+    background: #FFF4E6;
+}
+
+.guess-cell {
+    min-width: 120px;
+}
+
+.guess-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--ah-black);
+}
+
+.guess-feedback {
+    min-width: 200px;
+}
+
+.feedback-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.feedback-text.higher {
+    background: var(--ah-orange);
+    color: var(--ah-white);
+}
+
+.feedback-text.lower {
+    background: var(--ah-primary-blue);
+    color: var(--ah-white);
+}
+
+.feedback-text.correct {
+    background: var(--ah-green);
+    color: var(--ah-white);
+}
+
+.feedback-text.start {
+    color: var(--ah-gray);
+    font-style: italic;
+}
+
+/* Game Status */
+.game-status {
+    text-align: center;
+}
+
+.game-message {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.game-message.win {
+    background: var(--ah-light-green);
+    color: var(--ah-dark-green);
+    border: 2px solid var(--ah-green);
+}
+
+.game-message.lose {
+    background: var(--ah-light-blue);
+    color: var(--ah-secondary-blue);
+    border: 2px solid var(--ah-primary-blue);
+}
+
+.new-game-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: var(--ah-green);
+    color: var(--ah-white);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.new-game-button:hover {
+    background: var(--ah-dark-green);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 166, 81, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .game-container {
+        padding: 20px;
+    }
+    
+    .product-display {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .product-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .product-description {
+        font-size: 1.3rem;
+    }
+    
+    .guess-input-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .price-input {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .guess-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .logo h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Animation for new game */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.game-container {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Loading state */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid var(--ah-red);
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
