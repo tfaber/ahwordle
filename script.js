@@ -127,7 +127,7 @@ class PriceGuesserGame {
         this.updateGuessRow(this.currentAttempt, roundedGuess);
         
         // Check if correct
-        if (roundedGuess === this.currentProduct.price) {
+        if (roundedGuess === this.currentProduct.price || (Math.abs(roundedGuess - this.currentProduct.price) < 0.02)) {
             this.gameWon = true;
             this.gameOver = true;
             this.showGameMessage(`🎉 Correct! The price is €${this.currentProduct.price.toFixed(2)}. You won!`, 'win');
